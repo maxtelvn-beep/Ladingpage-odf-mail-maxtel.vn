@@ -383,12 +383,9 @@ export default function App() {
       {/* Sticky Navbar */}
       <nav className={`fixed top-0 w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-white shadow-md py-3 md:py-4' : 'bg-white/90 md:bg-white/80 backdrop-blur-md py-4 md:py-6 border-b border-slate-100 md:border-transparent'}`}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
-          <div className="flex items-center gap-2">
-            <div className="w-8 h-8 md:w-10 md:h-10 bg-brand-600 rounded-lg flex items-center justify-center">
-              <Server className="text-white w-5 h-5 md:w-6 md:h-6" />
+            <div className="flex items-center">
+              <img src="https://maxtel.vn/wp-content/uploads/2024/06/cropped-Logo-MAXTEL-3000.png" alt="MAXTEL Logo" className="h-8 md:h-10 w-auto object-contain" />
             </div>
-            <span className="text-xl md:text-2xl font-bold tracking-tight text-brand-900">MAXTEL</span>
-          </div>
           
           {/* Desktop Menu */}
           <div className="hidden md:flex flex-1 justify-center space-x-8">
@@ -898,30 +895,40 @@ export default function App() {
 
       {/* Footer */}
       <footer className="bg-slate-900 text-slate-400 py-12 text-sm">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-3 gap-8">
-          <div>
-            <div className="flex items-center gap-2 mb-6">
-              <div className="w-8 h-8 bg-brand-600 rounded flex items-center justify-center">
-                <Server className="text-white w-4 h-4" />
-              </div>
-              <span className="text-xl font-bold tracking-tight text-white">MAXTEL</span>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-4 gap-8">
+          <div className="md:col-span-1">
+            <div className="flex items-center mb-6">
+              <img src="https://maxtel.vn/wp-content/uploads/2024/06/cropped-Logo-MAXTEL-3000.png" alt="MAXTEL Logo" className="h-8 md:h-10 w-auto object-contain brightness-0 invert opacity-90" />
             </div>
             <p className="mb-4">Thương hiệu hàng đầu Việt Nam về thiết bị & phụ kiện cáp quang. Mang lại giải pháp thi công hiệu quả, an toàn, chất lượng.</p>
           </div>
-          <div>
+          <div className="md:col-span-1">
             <h4 className="text-white font-bold mb-4 uppercase tracking-wider text-xs">Liên Hệ</h4>
             <ul className="space-y-3">
               <li className="flex items-center gap-2"><Phone className="w-4 h-4"/> 0973.497.685</li>
               <li className="flex items-center gap-2"><Mail className="w-4 h-4"/> maxtel.vn@gmail.com</li>
             </ul>
           </div>
-          <div>
+          <div className="md:col-span-1">
             <h4 className="text-white font-bold mb-4 uppercase tracking-wider text-xs">Chính Sách</h4>
             <ul className="space-y-3">
               <li><a href="#" className="hover:text-white transition">Chính sách bảo hành</a></li>
               <li><a href="#" className="hover:text-white transition">Chính sách vận chuyển</a></li>
               <li><a href="#" className="hover:text-white transition">Đại lý phân phối</a></li>
             </ul>
+          </div>
+          <div className="md:col-span-1 rounded-xl overflow-hidden h-32 md:h-full min-h-[120px]">
+            <iframe 
+              src="https://maps.google.com/maps?q=C%C3%94NG+TY+C%E1%BB%94+PH%E1%BA%A6N+MAXTEL+VI%E1%BB%86T+NAM&output=embed" 
+              width="100%" 
+              height="100%" 
+              style={{ border: 0 }} 
+              allowFullScreen 
+              loading="lazy" 
+              referrerPolicy="no-referrer-when-downgrade"
+              title="Maxtel Location"
+              className="w-full h-full object-cover"
+            ></iframe>
           </div>
         </div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-12 pt-8 border-t border-slate-800 text-center text-xs">
