@@ -633,7 +633,7 @@ export default function App() {
                   className="bg-white rounded-2xl overflow-hidden shadow-lg shadow-slate-200/50 border border-slate-100 flex flex-col group cursor-pointer flex-none w-[80vw] sm:w-[340px] md:w-auto md:flex-1 snap-center"
                   onClick={scrollToContact}
                 >
-                  <div className="h-48 relative overflow-hidden bg-white p-4">
+                  <div className="aspect-square relative overflow-hidden bg-white p-4">
                     <img src={prod.img} alt={prod.title} className="w-full h-full object-contain group-hover:scale-110 transition-transform duration-700" />
                     <div className="absolute bottom-3 right-3">
                       <span className="bg-brand-600 text-white text-[10px] font-bold px-2.5 py-1 rounded shadow-sm">{prod.cap}</span>
